@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Appointments.aspx.cs" Inherits="Hautte_Pet_Parlor.Appointments" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>View or Create Appointments</h1>
+    <p>
+        <img alt="" src="A%20pup.jpg" style="width: 179px; height: 320px" /></p>
 <p>
     You can view appointments, or create appointments here.
 </p>
