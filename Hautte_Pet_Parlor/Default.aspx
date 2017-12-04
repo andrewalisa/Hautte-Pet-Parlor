@@ -12,7 +12,7 @@
             2200 Al-Mansour Road,<br />
             Baghdad, Iraq </p>
         <p class="text-center">
-            Please click on &#39;About Us&#39; to learn who we are, or register and sign your dog up for an appointment.</p>
+            Please click on &#39;About Us&#39; to learn who we are, or register and sign your pet up for an appointment.</p>
     </div>
 
 </asp:Content>

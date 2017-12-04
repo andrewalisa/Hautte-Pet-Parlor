@@ -54,6 +54,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -160,7 +162,6 @@
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
     <Content Include="Account\Lockout.aspx" />
-    <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
     <Content Include="Account\ManageLogins.aspx" />
     <Content Include="Account\ManagePassword.aspx" />
@@ -171,19 +172,92 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Appointment.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Appointment.edmx</DependentUpon>
+      <LastGenOutput>Appointment.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Appointment.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Appointment.edmx</DependentUpon>
+      <LastGenOutput>Appointment1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Appointments.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Dogs with Hats.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <EntityDeploy Include="Hautte Pet.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Hautte Pet.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Hautte Pet.edmx.diagram">
+      <DependentUpon>Hautte Pet.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Hautte_Pets.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Hautte_Pets.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Hautte_Pets.edmx.diagram">
+      <DependentUpon>Hautte_Pets.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Hautte_Pet_Parlor_Pet_Table.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Hautte_Pet_Parlor_Pet_Table.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Hautte_Pet_Parlor_Pet_Table.edmx.diagram">
+      <DependentUpon>Hautte_Pet_Parlor_Pet_Table.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Appointment.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Appointment.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Appointment.edmx.diagram">
+      <DependentUpon>Appointment.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\hauttewebsite.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Hautte Pet Parlor Logo.png" />
     <Content Include="Hautte Pet Parlor Logo_Website.png" />
+    <Content Include="Hautte Pet.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Hautte Pet.edmx</DependentUpon>
+      <LastGenOutput>Hautte Pet.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Hautte Pet.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Hautte Pet.edmx</DependentUpon>
+      <LastGenOutput>Hautte Pet.cs</LastGenOutput>
+    </Content>
+    <Content Include="Hautte_Pets.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Hautte_Pets.edmx</DependentUpon>
+      <LastGenOutput>Hautte_Pets.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Hautte_Pets.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Hautte_Pets.edmx</DependentUpon>
+      <LastGenOutput>Hautte_Pets.cs</LastGenOutput>
+    </Content>
+    <Content Include="Hautte_Pet_Parlor_Pet_Table.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Hautte_Pet_Parlor_Pet_Table.edmx</DependentUpon>
+      <LastGenOutput>Hautte_Pet_Parlor_Pet_Table.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Hautte_Pet_Parlor_Pet_Table.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Hautte_Pet_Parlor_Pet_Table.edmx</DependentUpon>
+      <LastGenOutput>Hautte_Pet_Parlor_Pet_Table.cs</LastGenOutput>
+    </Content>
+    <Content Include="Products.aspx" />
     <Content Include="Queries.aspx" />
+    <Content Include="Registration.aspx" />
     <Content Include="ROLLY2.jpg" />
     <Content Include="rolly_about_us.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -218,6 +292,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="SIRI for andrew.jpg" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -261,13 +336,6 @@
     </Compile>
     <Compile Include="Account\Lockout.aspx.designer.cs">
       <DependentUpon>Lockout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Manage.aspx.cs">
       <DependentUpon>Manage.aspx</DependentUpon>
@@ -339,6 +407,31 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Appointment.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Appointment.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment.cs">
+      <DependentUpon>Appointment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Appointment.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Appointment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments.aspx.cs">
+      <DependentUpon>Appointments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appointments.aspx.designer.cs">
+      <DependentUpon>Appointments.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -357,6 +450,9 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>Hautte Pet.tt</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -367,7 +463,62 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Hautte Pet.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hautte Pet.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hautte Pet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hautte Pet.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hautte Pet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hautte Pet.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Hautte_Pets.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hautte_Pets.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hautte_Pets.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hautte_Pets.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hautte_Pets.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hautte_Pets.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Hautte_Pet_Parlor_Pet_Table.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hautte_Pet_Parlor_Pet_Table.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hautte_Pet_Parlor_Pet_Table.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hautte_Pet_Parlor_Pet_Table.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hautte_Pet_Parlor_Pet_Table.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hautte_Pet_Parlor_Pet_Table.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Pet.cs">
+      <DependentUpon>Hautte_Pet_Parlor_Pet_Table.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries.aspx.cs">
       <DependentUpon>Queries.aspx</DependentUpon>
@@ -375,6 +526,13 @@
     </Compile>
     <Compile Include="Queries.aspx.designer.cs">
       <DependentUpon>Queries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -401,6 +559,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
